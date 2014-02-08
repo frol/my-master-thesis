@@ -1,0 +1,43 @@
+% Copyright 2011 Frol (c) <frolvlad@gmail.com>
+% 
+% Summarized information about WEP
+%/
+
+\include{preamble}
+
+\begin{document}
+
+\lefthyphenmin=5
+\righthyphenmin=5
+\abovedisplayshortskip=1.3em
+\belowdisplayshortskip=1.3em
+\abovedisplayskip=1.3em
+\belowdisplayskip=1.3em
+\setlength{\jot}{1em}
+
+\setcounter{page}{4}  % start counting including the title page
+
+\input{parts/referats}
+
+\renewcommand{\contentsname}{Содержание}
+{
+    \hyphenpenalty=10000 % disable word wrapping in table of contents
+    \tableofcontents
+}
+\newpage
+
+\input{parts/nomenclatures}
+\input{parts/introduction}
+
+\input{parts/chapter_criterias}
+\input{parts/chapter_methods}
+\input{parts/chapter_simulated_annealing}
+\input{parts/chapter_program_overview}
+%\input{parts/chapter_}
+\input{parts/chapter_worker_safety}
+
+\input{parts/conclusions}
+\input{parts/list_of_links}
+\input{parts/appendixes}
+
+\end{document}
